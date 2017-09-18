@@ -13792,13 +13792,13 @@ Default GPU Device: /gpu:0
                                        <span class="n">kernel_initializer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">())</span>
         <span class="n">x4</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">batch_normalization</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="n">is_train</span><span class="p">)</span>
         <span class="n">x4</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x4</span><span class="p">,</span> <span class="n">x4</span><span class="p">)</span>
-        <span class="c1"># 14x14x256</span>
+        <span class="c1"># 14x14x128</span>
         
         <span class="n">x5</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">conv2d_transpose</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">strides</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s1">&#39;same&#39;</span><span class="p">,</span>
                                        <span class="n">kernel_initializer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">())</span>
         <span class="n">x5</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">batch_normalization</span><span class="p">(</span><span class="n">x5</span><span class="p">,</span> <span class="n">training</span><span class="o">=</span><span class="n">is_train</span><span class="p">)</span>
         <span class="n">x5</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x5</span><span class="p">,</span> <span class="n">x5</span><span class="p">)</span>
-        <span class="c1"># 14x14x128</span>
+        <span class="c1"># 14x14x64</span>
         
                 
 
